@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Especialista</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+        }
+        .btn-save {
+            background-color: #28a745;
+        }
+        .btn-cancel {
+            background-color: #dc3545;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Painel Administrativo</h1>
+    </header>
+    <nav>
+        <a href="listagem-patrocinadores.html">Patrocinadores</a>
+        <a href="listagem-especialistas.html">Especialistas</a>
+    </nav>
+    <div class="container">
+        <h1>Adicionar Especialista</h1>
+        <form>
+            <label for="nome">Nome do Especialista:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite o nome"><br><br>
+            <label for="especialidade">Especialidade:</label><br>
+            <input type="text" id="especialidade" name="especialidade" placeholder="Digite a especialidade"><br><br>
+            <button type="submit" class="btn btn-save">Salvar</button>
+            <a href="listagem-especialistas.html" class="btn btn-cancel">Cancelar</a>
+        </form>
+    </div>
+</body>
+</html>

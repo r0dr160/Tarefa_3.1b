@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Patrocinadores</title>
+    <style>
+        /* Estilos semelhantes ao Painel Administrativo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, h1 {
+            /* Reutilizar estilos do Painel Administrativo */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        .btn {
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+        }
+        .btn-edit {
+            background-color: #28a745;
+        }
+        .btn-delete {
+            background-color: #dc3545;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Painel Administrativo</h1>
+    </header>
+    <nav>
+        <a href="listagem-patrocinadores.html">Patrocinadores</a>
+        <a href="listagem-especialistas.html">Especialistas</a>
+    </nav>
+    <div class="container">
+        <h1>Lista de Patrocinadores</h1>
+        <a href="adicionar-patrocinador.html" class="btn btn-edit">Adicionar Patrocinador</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>Logo</th>
+                    <th>Nome</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="eu.jpg" alt="Logo" width="50"></td>
+                    <td>Patrocinador X</td>
+                    <td>
+                        <a href="editar-patrocinador.html" class="btn btn-edit">Editar</a>
+                        <a href="#" class="btn btn-delete">Excluir</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="index.html">Voltar</a>
+    </div>
+</body>
+</html>
